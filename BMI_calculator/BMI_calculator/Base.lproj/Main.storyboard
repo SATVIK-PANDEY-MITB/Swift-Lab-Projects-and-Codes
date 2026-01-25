@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-Qh-UyF">
+                                <rect key="frame" x="100" y="119" width="193" height="21"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height(cm)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p28-B1-3v7">
+                                <rect key="frame" x="80" y="220" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-e6-ty0">
+                                <rect key="frame" x="196" y="215" width="137" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight(kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhv-Nn-M6F">
+                                <rect key="frame" x="80" y="301" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Oq-72-Bbe">
+                                <rect key="frame" x="194" y="294" width="139" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7H-lA-reD">
+                                <rect key="frame" x="130" y="418" width="133" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Calculate BMI"/>
+                                <connections>
+                                    <action selector="BMI_Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9l-z9-qa0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your BMI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-Kd-yGz">
+                                <rect key="frame" x="120" y="533" width="153" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRp-kr-dw8">
+                                <rect key="frame" x="130" y="627" width="133" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PRp-kr-dw8" secondAttribute="trailing" constant="130" id="6Ye-gU-JrN"/>
+                            <constraint firstItem="p28-B1-3v7" firstAttribute="top" secondItem="5AX-Qh-UyF" secondAttribute="bottom" constant="80" id="7XI-Zx-GoP"/>
+                            <constraint firstItem="e3n-Kd-yGz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Bvg-6J-hUG"/>
+                            <constraint firstItem="5AX-Qh-UyF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="GPM-M9-BTa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7H-lA-reD" secondAttribute="trailing" constant="130" id="ILr-sd-elF"/>
+                            <constraint firstItem="7Oq-72-Bbe" firstAttribute="top" secondItem="Hqg-e6-ty0" secondAttribute="bottom" constant="45" id="J9q-oX-XaM"/>
+                            <constraint firstItem="g7H-lA-reD" firstAttribute="top" secondItem="7Oq-72-Bbe" secondAttribute="bottom" constant="90" id="Jwp-DN-gfx"/>
+                            <constraint firstItem="Hqg-e6-ty0" firstAttribute="top" secondItem="5AX-Qh-UyF" secondAttribute="bottom" constant="75" id="KJ9-7t-F3H"/>
+                            <constraint firstItem="PRp-kr-dw8" firstAttribute="top" secondItem="e3n-Kd-yGz" secondAttribute="bottom" constant="60" id="Kpc-9Q-9oJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hqg-e6-ty0" secondAttribute="trailing" constant="60" id="Nca-ju-z26"/>
+                            <constraint firstItem="Yhv-Nn-M6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="NdD-aB-Ume"/>
+                            <constraint firstItem="PRp-kr-dw8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="NoS-fQ-3L8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5AX-Qh-UyF" secondAttribute="trailing" constant="100" id="RCO-v9-eX7"/>
+                            <constraint firstItem="5AX-Qh-UyF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="SXs-mR-yKS"/>
+                            <constraint firstItem="g7H-lA-reD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="cee-Z4-P2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Oq-72-Bbe" secondAttribute="trailing" constant="60" id="hna-FC-2pE"/>
+                            <constraint firstItem="e3n-Kd-yGz" firstAttribute="top" secondItem="g7H-lA-reD" secondAttribute="bottom" constant="80" id="iVb-FQ-Cfg"/>
+                            <constraint firstItem="Yhv-Nn-M6F" firstAttribute="top" secondItem="p28-B1-3v7" secondAttribute="bottom" constant="60" id="ihH-bf-CQd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3n-Kd-yGz" secondAttribute="trailing" constant="120" id="m3C-AW-zv7"/>
+                            <constraint firstItem="Hqg-e6-ty0" firstAttribute="leading" secondItem="p28-B1-3v7" secondAttribute="trailing" constant="30" id="oqv-O2-TGO"/>
+                            <constraint firstItem="p28-B1-3v7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="uaY-DH-chz"/>
+                            <constraint firstItem="7Oq-72-Bbe" firstAttribute="leading" secondItem="Yhv-Nn-M6F" secondAttribute="trailing" constant="30" id="yXw-ze-zCY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BMI" destination="e3n-Kd-yGz" id="BzA-zL-lnS"/>
+                        <outlet property="Calculate" destination="g7H-lA-reD" id="jZI-sa-4sK"/>
+                        <outlet property="Height" destination="Hqg-e6-ty0" id="yIj-6o-AW3"/>
+                        <outlet property="Result" destination="PRp-kr-dw8" id="6w4-eb-5eH"/>
+                        <outlet property="Weight" destination="7Oq-72-Bbe" id="5lZ-cG-sHk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
