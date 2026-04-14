@@ -63,9 +63,3 @@ Xcode projects only run on macOS
 Swift files can run on macOS or Linux (with Swift installed)
 
 
-
-From your screenshot:
-
-You wrote everything in one line
-GitHub needs blank lines between sections
-Lists must be on separate lines
