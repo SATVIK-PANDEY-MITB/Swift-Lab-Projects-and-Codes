@@ -8,7 +8,8 @@ This repository contains:
 💻 Standalone Swift Code Files
 
 
-📂 How to Run Xcode Projects
+
+## 📂 How to Run Xcode Projects
 
 
 Open the .xcodeproj file using Xcode
@@ -23,7 +24,8 @@ Use the Assistant Editor to view related Swift code
 Click the Run (▶) button to build and simulate the app
 
 
-💻 How to Run Swift Code Files
+
+## 💻 How to Run Swift Code Files
 
 You can run standalone Swift files using:
 
@@ -42,13 +44,15 @@ Run it inside a project or Playground
 swift filename.swift
 
 
-⚠️ Requirements
+
+## ⚠️ Requirements
 
 
 🍎 macOS (Required for Xcode projects)
 
 
-🛠 Xcode installed
+
+## 🛠 Xcode installed
 
 
 ⚡ Swift compiler (for CLI execution)
