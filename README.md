@@ -1,4 +1,4 @@
-## 🚀 Swift Lab
+# 🚀 Swift Lab
 
 This repository contains:
 
@@ -52,13 +52,14 @@ swift filename.swift
 
 
 
-## 🛠 Xcode installed
+🛠 Xcode installed
 
 
 ⚡ Swift compiler (for CLI execution)
 
 
-📌 Notes
+
+## 📌 Notes
 
 
 Xcode projects only run on macOS
